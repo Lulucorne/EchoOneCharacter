@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <!-- ==========================
     BASIC META / TITLE
@@ -10,7 +10,7 @@
     <!-- Favicon (optional per character) -->
     <link
       rel="icon"
-      href="/EchoOneCharacter/assets/characters/lucille-dubois/icon/icon.png"
+      href="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/icon/icon.png"
       type="image/png"
       sizes="32x32"
     />
@@ -21,13 +21,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+English:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Main character styles -->
-    <link rel="stylesheet" href="/EchoOneCharacter/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- ==========================
     SOCIAL / DISCORD PREVIEW
     ========================== -->
     <meta property="og:title" content="Character Sheet - Lucille Dubois" />
-    <meta property="og:description" content="“Sometimes dreams are wiser than waking.” – Black Elk" />
+    <meta property="og:description" content="Nous travaillons, un jour à la fois. Gloire à l'Union." />
     <meta
       property="og:image"
       content="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait3.jpg"
@@ -43,7 +43,7 @@
     BACKGROUND & OVERLAYS
     ========================== -->
   <div class="background"></div>
-  <body data-base="/EchoOneCharacter/assets/characters/lucille-dubois">
+  <body data-base="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois">
   <video class="overlay1" autoplay loop muted playsinline preload="auto">
   <source src="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/background/background.mp4" type="video/mp4" />
   </video>
@@ -52,160 +52,217 @@
   </video>
 
   <main class="page">
+
     <!-- ==========================
     MAIN CONTENT WRAPPER
     ========================== -->
     <div class="container">
-      <h1>the_iconist</h1>
-      <p class="quote">“Sometimes dreams are wiser than waking.” – Black Elk</p>
+      <h1>Lucille Dubois</h1>
+      <p class="quote">Nous travaillons, un jour à la fois. <b>Gloire à l'union.</b></p>
 
-      <!-- Profile Photos -->
-      <div class="profile-and-music">
-        <div class="photo-column">
-          <img
-            src="/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait1.png"
-            alt="Lucille Dubois"
-            class="profile-pic"
-          />
-          <img
-            src="/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait3.png"
-            alt="Lucille Dubois"
-            class="profile-pic"
-          />
-        </div>
-
-        <!-- Music Player -->
-        <div class="music-player-container">
-          <h2>Playlist</h2>
-
-          <div class="cover-art-container" style="text-align: center; margin-bottom: 10px">
+      <!-- ==========================
+      MUSIC
+      ========================== -->
+      <section class="profile-and-music" aria-label="Photos et Musique">
+          <div class="photo-column" aria-label="Photos">
             <img
-              id="cover-art"
-              src="assets/characters/lucille-dubois/music/cover/Call Me The Breeze - Lynyrd Skynyrd.jpeg"
-              alt="Cover Art"
+              src="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/portrait/Lucille-Dubois-Portrait1.png"
+              alt="Lucille Dubois"
+              class="profile-pic"
+              loading="lazy"
             />
-            <div id="track-info"></div>
-            <div id="time-stamp">0:00 / 5:09</div>
+            <img
+              src="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/portrait/Lucille-Dubois-Portrait3.png"
+              alt="Lucille Dubois"
+              class="profile-pic"
+              loading="lazy"
+            />
           </div>
 
-          <!-- Controls -->
-          <div class="music-controls">
-            <audio id="audio" autoplay></audio>
-            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1" />
-            <button id="mute-btn">🕪</button>
-            <button id="play-pause">▶</button>
-            <button id="shuffle-btn">⇆</button>
-          </div>
+          <section class="music-player-container" aria-label="Playlist">
+            <h2>Playlist</h2>
 
-          <div class="playlist scrollable" id="playlist"></div>
-        </div>
-      </div>
+            <div class="cover-art-container" style="text-align: center; margin-bottom: 10px">
+              <img id="cover-art" alt="Cover Art" />
+              <div id="track-info"></div>
+              <div id="time-stamp">0:00 / 5:05</div>
+            </div>
 
-      <!-- ==========================
-           TOP FRIENDS
-           ==========================
-      <div class="section">
-        <h2>Top Friends</h2>
+            <div class="music-controls" role="group" aria-label="Contrôles audio">
+              <audio id="audio"></audio>
+              <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1" />
+              <button type="button" id="mute-btn">🕪</button>
+              <button type="button" id="play-pause">▶</button>
+              <button type="button" id="shuffle-btn">⇆</button>
+            </div>
 
-        <div class="friends">
-          <figure class="friend">
-            <img
-              src="/EchoOneCharacter/assets/characters/lucille-dubois/friends/Cheyenne.jpg"
-              alt="Cheyenne"
-            />
-            <figcaption>Cheyenne</figcaption>
-          </figure>
+            <div class="playlist scrollable" id="playlist" aria-label="Liste de lecture"></div>
+          </section>
+        </section>
+        <!-- ==========================
+              2-COLUMN INTRO
+        ========================== -->
+        <hr class="dotted">
+        <section class="post-info" aria-label="Intro">
+          <article class="post">
+            <div
+              class="bb-intro-grid"
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 18px;
+                align-items: stretch;
+              "
+            >
+              <!-- Left narrative -->
+              <div class="char-block">
+                <p style="margin: 0; text-align: center;">
+                  <br>
+                  Je dois continuer à avancer.<br>
+                  Pour <i>maman</i>. Pour <i>papa</i>. Pour <i>nous tous</i>.<br>
+                  Chaque jour est un nouveau combat, mais je ne peux pas me permettre d'arrêter.<br>
+                  Je suis peut-être <s>jeune</s>, mais je suis capable de travailler autant que les autres.<br>
+                  <br>
+                  Nous travaillons, un jour à la fois.<br>
+                  <b><u>GLOIRE À L'UNION.</u></b>
+                </p>
+              </div>
+              <!-- Right stats list -->
+              <div class="char-block">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li><span>NOM</span><br>LUCILLE DUBOIS</li>
+                  <li><span>SURNOM</span><br>"LUCIE"</li>
+                  <li><span>SEXE</span><br>FEMME</li>
+                  <li><span>ÂGE</span><br>19</li>
+                  <li><span>LIEU DE NAISSANCE</span><br>PARIS, FRANCE</li>
+                  <li><span>STATUS</span><br>CITOYENNE</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
 
-          <figure class="friend">
-            <img
-              src="/EchoOneCharacter/assets/characters/lucille-dubois/friends/Nelson.jpg"
-              alt="Nelson"
-            />
-            <figcaption>Nelson</figcaption>
-          </figure>
-        </div>
-      </div>  -->
+        <!-- ==========================
+             BIG TWO-COLUMN PANELS
+        ========================== -->
+        <hr class="dotted">
+        <section class="post-info" aria-label="Détails">
+          <article class="post">
+            <div
+              class="bb-two-panels"
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start"
+            >
+              <div class="char-block">
+                <h3>❅ APPARENCE ❅</h3>
+                <p>
+                  Une jeune femme de dix-neuf ans de petite taille. Ses cheveux châtains sont échevelés, et ses yeux verts brillent d'une détermination sauvage. Une odeur d'huile la suit constamment.
+                </p>
+                <br>
+                <hr class="dotted">
+                <br>
+                <h3>❅ FAMILLE ❅</h3>
+                <p><strong>MÈRE:</strong><br>
+                Madelaine Dubois<br>
+                <i>Cité 24</i></p>
+                <br>
+                <p><strong>PÈRE:</strong><br>
+                Arthur Dubois<br>
+                <i>Décédé</i></p>
+              </div>
 
-      <!-- ==========================
-           BACKPACK & GEAR
-           ========================== -->
-      <!-- <section class="char-block backpack-block">
-        <h3>Backpack &amp; Gear</h3>
-        <div class="backpack-image">
-          <img
-            src="/EchoOneCharacter/assets/characters/lucille-dubois/bag/Backpack.png"
-            alt="Percival Yeon's Backpack"
-            class="backpack-pic"
-          />
-        </div>
-      </section> -->
+              <div class="char-block">
+                <h3>❅ PERSONALITÉ ❅</h3>
+                <p>
+                  Lucie est une femme animée par un profond sens du devoir envers sa communauté. Malgré les difficultés, elle reste optimiste et déterminée à construire un avenir meilleur pour la Cité.
+                </p>
+                <br>
+                <hr class="dotted">
+                <br>
 
-      <!-- ==========================
-           OOC CHARACTER INFORMATION
-           ========================== -->
-      <section class="character-info">
-        <h2>Information OOC</h2>
-        <div class="divider"></div>
+                <h3>❅ APPRÉCIE ❅</h3>
+                <ul>
+                  <li>Tâches répétitives</li>
+                  <li>Tartes aux pommes</li>
+                </ul>
 
-        <!-- Basics -->
-        <div class="char-block">
-          <h3>Information Générales</h3>
-          <ul>
-            <li><span>Nom:</span> Lucille Dubois</li>
-            <li><span>Surnom:</span> 'Lucie'</li>
-            <li><span>Lieu de Naissance:</span> 19</li>
-            <li><span>Place of Birth:</span> Paris, France</li>
-            <li><span>Nationalité:</span> Française</li>
-            <li><span>Origine Ethnique:</span> Française</li>
-            <li><span>Langues parlées:</span> Français, Anglais</li>
-            <li><span>Occupation:</span> Citoyenne</li>
-          </ul>
-        </div>
+                <h3>❅ DÉTESTES ❅</h3>
+                <ul>
+                  <li>Erreurs</li>
+                  <li>Discours alarmistes</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
 
-        <!-- Appearance & Condition -->
-        <div class="char-block">
-          <h3>Apparence &amp; Condition</h3>
-          <ul>
-            <li><span>Taille:</span> 1,63 m</li>
-            <li><span>Physique:</span> Mince, légèrement fragile</li>
-            <li><span>Cheveux:</span> Blond clair</li>
-            <li><span>Yeux:</span> Bleus pâles</li>
-            <li><span>Traits distinctifs:</span> Visage aux traits doux, regard souvent absent</li>
-          </ul>
-        </div>
-      </section>
+        <!-- ==========================
+             RELATIONSHIPS
+        ========================== -->
+        <hr class="dotted">
+        <section class="post-info" aria-label="Relations" style="padding-bottom: 10px">
+          <h2>❄ Relations ❄</h2>
+          <article class="post">
+            <details class="bb-spoiler">
+              <summary class="bb-spoiler-btn">“Ceux que j’aime, ceux qui me sont chers, ceux qui me font face.”</summary>
 
-      <!-- ==========================
-           ABOUT ME
-           ==========================
-      <div class="section about">
-        <h2>About Me</h2>
-        <p>
-          A laid back dude who loves classic cars and a huge goofball.
-        </p>
-      </div> -->
+              <div class="bb-spoiler-body">
+                <p style="text-align:center; margin-top: 0;">
+                  <span class="rel loves">ATTACHEMENT</span>
+                  <span class="rel admires">ADMIRATION</span>
+                  <span class="rel respects">RESPECT</span>
+                  <span class="rel bestfriend">ALLIÉ PRINCIPAL</span>
+                  <span class="rel friend">ALLIÉ</span>
+                  <span class="rel acquaintance">CONNAISSANCE</span>
+                  <span class="rel distrusts">SUSPICION</span>
+                  <span class="rel dislikes">AVERSION</span>
+                  <span class="rel hates">HOSTILITÉ</span>
+                  <span class="rel deceased">DÉCÉDÉ</span>
+                </p>
 
-      <!-- ==========================
-           INTERESTS
-           ========================== -->
-      <!-- <div class="section interests">
-        <h2>Interests</h2>
-        <p>
-          <strong>Music:</strong> What they like to listen to.<br />
-          <strong>Favorite Food Place:</strong> Their go-to spot.<br />
-          <strong>Movies:</strong> Favorite genres, shows, or films.
-        </p>
-      </div> -->
+                <p style="text-align:center; margin-top: 5px"><i>Dites-le moi si je vous ai oublié.</i></p>
 
-      <!-- ==========================
-           FOOTER
-           ========================== -->
-      <div class="footer">Last Login: JANUARY 24, 2017</div>
-    </div>
+                <div class="bb-relations">
+                  <div class="bb-rel">
+                    <h3 class="bb-rel-name"><span class="rel loves">❅ TBD ❅</span></h3>
+
+                    <details class="bb-spoiler bb-spoiler-mini">
+                      <summary class="bb-spoiler-btn">TBD</summary>
+                      <div class="bb-spoiler-body">
+                        <p style="margin: 0;">TBD</p>
+                      </div>
+                    </details>
+                  </div>
+
+                  <div class="bb-rel">
+                    <h3 class="bb-rel-name"><span class="rel bestfriend">❅ TBD ❅</span></h3>
+
+                    <details class="bb-spoiler bb-spoiler-mini">
+                      <summary class="bb-spoiler-btn">TBD</summary>
+                      <div class="bb-spoiler-body">
+                        <p style="margin: 0;">TBD</p>
+                      </div>
+                    </details>
+                  </div>
+
+                  <div class="bb-rel">
+                    <h3 class="bb-rel-name"><span class="rel distrusts">❅ TBD ❅</span></h3>
+
+                    <details class="bb-spoiler bb-spoiler-mini">
+                      <summary class="bb-spoiler-btn">TBD</summary>
+                      <div class="bb-spoiler-body">
+                        <p style="margin: 0;">TBD</p>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </article>
+        </section>
 
     <!-- ==========================
-         SCRIPT (SHARED PLAYER / ICON LOGIC)
-         ========================== -->
-    <script src="/EchoOneCharacter/script.js"></script>
+         SCRIPT
+    ========================== -->
+    <script src="script.js"></script>
   </body>
 </html>

@@ -17,48 +17,88 @@ let isShuffled = false;
 
 const songs = [
   {
-    title: 'About Sophie',
-    artist: 'Keaton Henson',
-    src: 'assets/characters/alicia-ming/music/About Sophie - Keaton Henson.mp3',
-    cover: 'assets/characters/alicia-ming/music/cover/About Sophie - Keaton Henson.jpeg',
-  },
-  {
     title: 'Asleep Among Endives',
     artist: 'Ichiko Aoba',
-    src: 'assets/characters/alicia-ming/music/Asleep Among Endives - Ichiko Aoba.mp3',
-    cover: 'assets/characters/alicia-ming/music/cover/Asleep Among Endives - Ichiko Aoba.jpeg',
+    src: 'assets/characters/lucille-dubois/music/Asleep Among Endives - Ichiko Aoba.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Asleep Among Endives - Ichiko Aoba.jpeg',
   },
   {
     title: 'Her Joy Was Complete',
     artist: 'Sleeping At Last',
-    src: 'assets/characters/alicia-ming/music/Her Joy Was Complete - Sleeping At Last.mp3',
-    cover: 'assets/characters/alicia-ming/music/cover/Her Joy Was Complete - Sleeping At Last.jpeg',
+    src: 'assets/characters/lucille-dubois/music/Her Joy Was Complete - Sleeping At Last.mp3',
+    cover:
+      'assets/characters/lucille-dubois/music/cover/Her Joy Was Complete - Sleeping At Last.jpeg',
   },
   {
     title: 'Humming (Isolated Vocals)',
     artist: 'Ichiko Aoba',
-    src: 'assets/characters/alicia-ming/music/Humming (Isolated Vocals) - Ichiko Aoba.mp3',
-    cover: 'assets/characters/alicia-ming/music/cover/Humming (Isolated Vocals) - Ichiko Aoba.jpeg',
+    src: 'assets/characters/lucille-dubois/music/Humming (Isolated Vocals) - Ichiko Aoba.mp3',
+    cover:
+      'assets/characters/lucille-dubois/music/cover/Humming (Isolated Vocals) - Ichiko Aoba.jpeg',
   },
   {
     title: 'Je te laisserai des mots',
     artist: 'Patrick Watson',
-    src: 'assets/characters/alicia-ming/music/Je te laisserai des mots - Patrick Watson.mp3',
+    src: 'assets/characters/lucille-dubois/music/Je te laisserai des mots - Patrick Watson.mp3',
     cover:
-      'assets/characters/alicia-ming/music/cover/Je te laisserai des mots - Patrick Watson.jpeg',
+      'assets/characters/lucille-dubois/music/cover/Je te laisserai des mots - Patrick Watson.jpeg',
   },
   {
     title: 'Wild Life In The Forest Sounds',
     artist: 'Natural Sounds Selections',
-    src: 'assets/characters/alicia-ming/music/Wild Life In The Forest Sounds - Natural Sounds Selections.mp3',
+    src: 'assets/characters/lucille-dubois/music/Wild Life In The Forest Sounds - Natural Sounds Selections.mp3',
     cover:
-      'assets/characters/alicia-ming/music/cover/Wild Life In The Forest Sounds - Natural Sounds Selections.jpeg',
+      'assets/characters/lucille-dubois/music/cover/Wild Life In The Forest Sounds - Natural Sounds Selections.jpeg',
   },
   {
-    title: 'ゆめうつつ',
-    artist: 'Lamp',
-    src: 'assets/characters/alicia-ming/music/ゆめうつつ - Lamp.mp3',
-    cover: 'assets/characters/alicia-ming/music/cover/ゆめうつつ - Lamp.jpeg',
+    title: 'Blue',
+    artist: 'Angelo De Augustine',
+    src: 'assets/characters/lucille-dubois/music/Blue - Angelo De Augustine.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Blue - Angelo De Augustine.jpeg',
+  },
+  {
+    title: 'Diamond Day',
+    artist: 'Vashti Bunyan',
+    src: 'assets/characters/lucille-dubois/music/Diamond Day - Vashti Bunyan.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Diamond Day - Vashti Bunyan.jpeg',
+  },
+  {
+    title: 'You Needed Love, I Needed You',
+    artist: 'Angelo De Augustine',
+    src: 'assets/characters/lucille-dubois/music/You Needed Love_ I Needed You - Angelo De Augustine.mp3',
+    cover:
+      'assets/characters/lucille-dubois/music/cover/You Needed Love_ I Needed You - Angelo De Augustine.jpeg',
+  },
+  {
+    title: 'Landslide',
+    artist: 'Fleetwood Mac',
+    src: 'assets/characters/lucille-dubois/music/Landslide - Fleetwood Mac.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Landslide - Fleetwood Mac.jpeg',
+  },
+  {
+    title: 'Anchor',
+    artist: 'Novo Amor',
+    src: 'assets/characters/lucille-dubois/music/Anchor - Novo Amor.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Anchor - Novo Amor.jpeg',
+  },
+  {
+    title: 'Repeat Until Death',
+    artist: 'Novo Amor',
+    src: 'assets/characters/lucille-dubois/music/Repeat Until Death - Novo Amor.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Repeat Until Death - Novo Amor.jpeg',
+  },
+  {
+    title: 'My Backwards Walk',
+    artist: 'Frightened Rabbit',
+    src: 'assets/characters/lucille-dubois/music/My Backwards Walk - Frightened Rabbit.mp3',
+    cover:
+      'assets/characters/lucille-dubois/music/cover/My Backwards Walk - Frightened Rabbit.jpeg',
+  },
+  {
+    title: 'Holocene',
+    artist: 'Bon Iver',
+    src: 'assets/characters/lucille-dubois/music/Holocene - Bon Iver.mp3',
+    cover: 'assets/characters/lucille-dubois/music/cover/Holocene - Bon Iver.jpeg',
   },
 ];
 
@@ -85,8 +125,8 @@ function playTrack(index) {
   currentIndex = index;
   const song = songs[index];
 
-  const srcPath = song.src.replace(/^assets\/characters\/alicia-ming\//, '');
-  const coverPath = song.cover.replace(/^assets\/characters\/alicia-ming\//, '');
+  const srcPath = song.src.replace(/^assets\/characters\/lucille-dubois\//, '');
+  const coverPath = song.cover.replace(/^assets\/characters\/lucille-dubois\//, '');
 
   audio.src = `${BASE}/${srcPath}`;
   coverArt.src = `${BASE}/${coverPath}`;
@@ -120,6 +160,15 @@ function nextTrack() {
 
 function prevTrack() {
   playTrack((currentIndex - 1 + songs.length) % songs.length);
+}
+
+function toggleText() {
+  var x = document.getElementById('text-to-toggle');
+  if (x.style.display === 'none' || x.style.display === '') {
+    x.style.display = 'block'; // Show the text
+  } else {
+    x.style.display = 'none'; // Hide the text
+  }
 }
 
 // ====== UI EVENTS ======
