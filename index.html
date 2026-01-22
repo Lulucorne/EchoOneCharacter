@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ==========================
+    BASIC META / TITLE
+    ========================== -->
+    <meta charset="UTF-8" />
+    <title>Lucille Dubois</title>
+
+    <!-- Favicon (optional per character) -->
+    <link
+      rel="icon"
+      href="/EchoOneCharacter/assets/characters/lucille-dubois/icon/icon.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+English:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main character styles -->
+    <link rel="stylesheet" href="/EchoOneCharacter/assets/characters/lucille-dubois/styles.css" />
+
+    <!-- ==========================
+    SOCIAL / DISCORD PREVIEW
+    ========================== -->
+    <meta property="og:title" content="Character Sheet - Lucille Dubois" />
+    <meta property="og:description" content="“Sometimes dreams are wiser than waking.” – Black Elk" />
+    <meta
+      property="og:image"
+      content="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait3.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://lulucorne.github.io/EchoOneCharacter/characters/lucille-dubois/"
+    />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <!-- ==========================
+    BACKGROUND & OVERLAYS
+    ========================== -->
+  <div class="background"></div>
+  <body data-base="/EchoOneCharacter/assets/characters/lucille-dubois">
+  <video class="overlay1" autoplay loop muted playsinline preload="auto">
+  <source src="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/background/background.mp4" type="video/mp4" />
+  </video>
+  <video class="overlay2" autoplay loop muted playsinline preload="auto">
+  <source src="https://lulucorne.github.io/EchoOneCharacter/assets/characters/lucille-dubois/background/overlay1.mp4" type="video/mp4" />
+  </video>
+
+  <main class="page">
+    <!-- ==========================
+    MAIN CONTENT WRAPPER
+    ========================== -->
+    <div class="container">
+      <h1>the_iconist</h1>
+      <p class="quote">“Sometimes dreams are wiser than waking.” – Black Elk</p>
+
+      <!-- Profile Photos -->
+      <div class="profile-and-music">
+        <div class="photo-column">
+          <img
+            src="/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait1.png"
+            alt="Lucille Dubois"
+            class="profile-pic"
+          />
+          <img
+            src="/EchoOneCharacter/assets/characters/lucille-dubois/portrait/lucille-dubois-Portrait3.png"
+            alt="Lucille Dubois"
+            class="profile-pic"
+          />
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player-container">
+          <h2>Playlist</h2>
+
+          <div class="cover-art-container" style="text-align: center; margin-bottom: 10px">
+            <img
+              id="cover-art"
+              src="assets/characters/lucille-dubois/music/cover/Call Me The Breeze - Lynyrd Skynyrd.jpeg"
+              alt="Cover Art"
+            />
+            <div id="track-info"></div>
+            <div id="time-stamp">0:00 / 5:09</div>
+          </div>
+
+          <!-- Controls -->
+          <div class="music-controls">
+            <audio id="audio" autoplay></audio>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.1" />
+            <button id="mute-btn">🕪</button>
+            <button id="play-pause">▶</button>
+            <button id="shuffle-btn">⇆</button>
+          </div>
+
+          <div class="playlist scrollable" id="playlist"></div>
+        </div>
+      </div>
+
+      <!-- ==========================
+           TOP FRIENDS
+           ==========================
+      <div class="section">
+        <h2>Top Friends</h2>
+
+        <div class="friends">
+          <figure class="friend">
+            <img
+              src="/EchoOneCharacter/assets/characters/lucille-dubois/friends/Cheyenne.jpg"
+              alt="Cheyenne"
+            />
+            <figcaption>Cheyenne</figcaption>
+          </figure>
+
+          <figure class="friend">
+            <img
+              src="/EchoOneCharacter/assets/characters/lucille-dubois/friends/Nelson.jpg"
+              alt="Nelson"
+            />
+            <figcaption>Nelson</figcaption>
+          </figure>
+        </div>
+      </div>  -->
+
+      <!-- ==========================
+           BACKPACK & GEAR
+           ========================== -->
+      <!-- <section class="char-block backpack-block">
+        <h3>Backpack &amp; Gear</h3>
+        <div class="backpack-image">
+          <img
+            src="/EchoOneCharacter/assets/characters/lucille-dubois/bag/Backpack.png"
+            alt="Percival Yeon's Backpack"
+            class="backpack-pic"
+          />
+        </div>
+      </section> -->
+
+      <!-- ==========================
+           OOC CHARACTER INFORMATION
+           ========================== -->
+      <section class="character-info">
+        <h2>Information OOC</h2>
+        <div class="divider"></div>
+
+        <!-- Basics -->
+        <div class="char-block">
+          <h3>Information Générales</h3>
+          <ul>
+            <li><span>Nom:</span> Lucille Dubois</li>
+            <li><span>Surnom:</span> 'Lucie'</li>
+            <li><span>Lieu de Naissance:</span> 19</li>
+            <li><span>Place of Birth:</span> Paris, France</li>
+            <li><span>Nationalité:</span> Française</li>
+            <li><span>Origine Ethnique:</span> Française</li>
+            <li><span>Langues parlées:</span> Français, Anglais</li>
+            <li><span>Occupation:</span> Citoyenne</li>
+          </ul>
+        </div>
+
+        <!-- Appearance & Condition -->
+        <div class="char-block">
+          <h3>Apparence &amp; Condition</h3>
+          <ul>
+            <li><span>Taille:</span> 1,63 m</li>
+            <li><span>Physique:</span> Mince, légèrement fragile</li>
+            <li><span>Cheveux:</span> Blond clair</li>
+            <li><span>Yeux:</span> Bleus pâles</li>
+            <li><span>Traits distinctifs:</span> Visage aux traits doux, regard souvent absent</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========================
+           ABOUT ME
+           ==========================
+      <div class="section about">
+        <h2>About Me</h2>
+        <p>
+          A laid back dude who loves classic cars and a huge goofball.
+        </p>
+      </div> -->
+
+      <!-- ==========================
+           INTERESTS
+           ========================== -->
+      <!-- <div class="section interests">
+        <h2>Interests</h2>
+        <p>
+          <strong>Music:</strong> What they like to listen to.<br />
+          <strong>Favorite Food Place:</strong> Their go-to spot.<br />
+          <strong>Movies:</strong> Favorite genres, shows, or films.
+        </p>
+      </div> -->
+
+      <!-- ==========================
+           FOOTER
+           ========================== -->
+      <div class="footer">Last Login: JANUARY 24, 2017</div>
+    </div>
+
+    <!-- ==========================
+         SCRIPT (SHARED PLAYER / ICON LOGIC)
+         ========================== -->
+    <script src="/EchoOneCharacter/assets/characters/lucille-dubois/script.js"></script>
+  </body>
+</html>
